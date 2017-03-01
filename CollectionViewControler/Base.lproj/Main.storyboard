@@ -173,17 +173,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Collection View en IOS" id="rPB-uo-fq9"/>
                     <connections>
-                        <segue destination="8oY-ys-Uyn" kind="show" id="C6d-eK-jnl"/>
+                        <segue destination="8oY-ys-Uyn" kind="show" identifier="segue" id="C6d-eK-jnl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMj-7y-Bv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="752.44565217391312"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalle View Controller-->
         <scene sceneID="fqL-4b-rFz">
             <objects>
-                <viewController id="8oY-ys-Uyn" sceneMemberID="viewController">
+                <viewController id="8oY-ys-Uyn" customClass="DetalleViewController" customModule="CollectionViewControler" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s6R-WY-clV"/>
                         <viewControllerLayoutGuide type="bottom" id="lrp-LW-DTl"/>
@@ -235,6 +235,9 @@
                             <constraint firstAttribute="trailing" secondItem="NWv-PV-hjr" secondAttribute="trailing" constant="20" id="zrd-hV-7KV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgImagen" destination="CIW-Bq-QOe" id="6yI-9e-1HX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9j3-EH-Chm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

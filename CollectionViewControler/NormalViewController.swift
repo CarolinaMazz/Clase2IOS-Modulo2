@@ -55,18 +55,26 @@ class NormalViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        
+        let indice = indexPath.row
+        let dato = items[indice]
+        
+        self.performSegue(withIdentifier: "segue", sender: dato)
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let DetalleViewController: DetalleViewController = segue.destination as! DetalleViewController
+        
+        DetalleViewController.parametro = sender as! item
     }
-    */
+    
 
 }
